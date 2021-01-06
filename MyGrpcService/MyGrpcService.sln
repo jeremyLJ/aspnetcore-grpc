@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30104.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyGrpcService", "MyGrpcService\MyGrpcService.csproj", "{D6DFBF99-A9B1-4F1A-8DEC-E098A7AA081D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyGrpcNetClient", "dotNetClient\MyGrpcNetClient\MyGrpcNetClient.csproj", "{CDC24095-BD0D-4455-8CB1-94FD593DF6EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyGrpcNetClient", "dotNetClient\MyGrpcNetClient\MyGrpcNetClient.csproj", "{CDC24095-BD0D-4455-8CB1-94FD593DF6EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyGrpcAspNetCoreClient", "aspNetCoreClient\MyGrpcAspNetCoreClient\MyGrpcAspNetCoreClient.csproj", "{24559368-53EA-4D18-A4E0-344A7CF8B98F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{CDC24095-BD0D-4455-8CB1-94FD593DF6EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDC24095-BD0D-4455-8CB1-94FD593DF6EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDC24095-BD0D-4455-8CB1-94FD593DF6EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24559368-53EA-4D18-A4E0-344A7CF8B98F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24559368-53EA-4D18-A4E0-344A7CF8B98F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24559368-53EA-4D18-A4E0-344A7CF8B98F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24559368-53EA-4D18-A4E0-344A7CF8B98F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
