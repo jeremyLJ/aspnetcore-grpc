@@ -27,9 +27,13 @@ namespace MyGrpcAspNetCoreClient
         {
             services.AddControllers();
 
+            // This switch must be set before creating the GrpcChannel/HttpClient.
+            AppContext.SetSwitch(
+                "System.Net.Http.SocketsHttpHandler.Http2UnencryptedSupport", true);
+
             services.AddGrpcClient<Greet.Greeter.GreeterClient>(options =>
             {
-                options.Address = new Uri("https://localhost:5001");
+                options.Address = new Uri("http://localhost:5000");
             });
         }
 

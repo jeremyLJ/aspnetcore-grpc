@@ -8,7 +8,11 @@ namespace MyGrpcNetClient
     {
         static void Main(string[] args)
         {
-            var channel = GrpcChannel.ForAddress("https://localhost:5001");
+            // This switch must be set before creating the GrpcChannel/HttpClient.
+            AppContext.SetSwitch(
+                "System.Net.Http.SocketsHttpHandler.Http2UnencryptedSupport", true);
+
+            var channel = GrpcChannel.ForAddress("http://localhost:5000");
             var client = new Greeter.GreeterClient(channel);
 
             var response = client.SayHello(new HelloRequest
